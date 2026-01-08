@@ -30,6 +30,10 @@ cd Desafio-Game-YuGiOh
 
 3. Abra o arquivo index.html em seu navegador
 
+### Ou se preferir, pode acessar: https://izauratm.github.io/Desafio-Game-YuGiOh/ , para se divertir!
+
+---
+
 ## 🗂️ Estrutura das Pastas
 ```
 Desafio-Game-YuGiOh/
