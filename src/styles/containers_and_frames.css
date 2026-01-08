@@ -23,9 +23,10 @@
   padding: 12px;
 
   /* internal border */
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
 
   /* background */
   background: url("../assets/rpg/background-image.png") repeat repeat;
@@ -46,9 +47,10 @@
   padding: 12px;
 
   /* internal border */
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
 
   /* background */
   background: url("../assets/rpg/background-image-golden.png") repeat repeat;
@@ -69,9 +71,10 @@
   padding: 12px;
 
   /* internal border */
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
 
   /* background */
   background: url("../assets/rpg/background-image-golden2.png") repeat repeat;
@@ -94,9 +97,10 @@
   padding: 12px;
 
   /* internal border */
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
+  
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
   /* background */
   background: url("../assets/rpg/background-image-grey.png") repeat repeat;

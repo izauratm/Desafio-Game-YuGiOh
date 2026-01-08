@@ -27,7 +27,7 @@ const state = {
     },
 };
 
-//mapeamento 
+//mapeamento
 const playerSides = {
     player1: "player-cards",
     computer: "computer-cards",
@@ -37,31 +37,72 @@ const pathImages = "./src/assets/icons/";
 
 //objetos, propriedades e enumeração das cartas
 const cardData = [
-    { 
+    {
         id: 0,
         name: "Blue Eyes White Dragon",
         type: "Paper",
         img: `${pathImages}dragon.png`, //interpolação das string
-        WinOf: [1],
-        LoseOf: [2],
+        WinOf: [1, 3],
+        LoseOf: [2, 5, 6],
     },
     {
         id: 1,
         name: "Dark Magician",
         type: "Rock",
-        img: `${pathImages}magician.png`,
-        WinOf: [2],
-        LoseOf: [0],
+        img: `${pathImages}darkmago.png`,
+        WinOf: [2, 5, 6],
+        LoseOf: [0, 4, 7],
     },
     {
         id: 2,
         name: "Exodia",
         type: "Scissiors",
         img: `${pathImages}exodia.png`,
-        WinOf: [0],
-        LoseOf: [1],
+        WinOf: [0, 4, 7],
+        LoseOf: [1, 3],
+    },
+    {
+        id: 3,
+        name: "Rock Gigant",
+        type: "Rock",
+        img: `${pathImages}gigant.png`,
+        WinOf: [2, 5, 6],
+        LoseOf: [0, 4, 7],
+    },
+    {
+        id: 4,
+        name: "Griffore",
+        type: "Paper",
+        img: `${pathImages}griffore.png`,
+        WinOf: [1, 3],
+        LoseOf: [2, 5,6],
+    },
+    {
+        id: 5,
+        name: "Magican of the Chaos",
+        type: "Scissiors",
+        img: `${pathImages}magocaos.png`,
+        WinOf: [0, 4, 7],
+        LoseOf: [1, 3],
+    },
+    {
+        id: 6,
+        name: "Celtic Guardian",
+        type: "Scissiors",
+        img: `${pathImages}guardian.png`,
+        WinOf: [0, 4, 7],
+        LoseOf: [1, 3],
+    },
+    {
+        id: 7,
+        name: "Wild Demon",
+        type: "Paper",
+        img: `${pathImages}demon.png`,
+        WinOf: [1, 3],
+        LoseOf: [2, 5, 6],
     },
 ];
+
 
 //servir um id aleatorio
 async function getRandomCardId() {
@@ -94,7 +135,7 @@ async function createCardImage(IdCard, fieldSide) {
 async function setCardsField(cardId) {
     //remove todas cartas antes
     await removeAllCardsImages();
-   
+
     //sorteia carta aleatoria
     let computerCardId = await getRandomCardId();
 
@@ -107,7 +148,7 @@ async function setCardsField(cardId) {
     //checa o resultado
     let duelResults = await checkDuelResults(cardId, computerCardId);
 
-    //atualizar pontuação 
+    //atualizar pontuação
     await updateScore();
     await drawButton(duelResults);
 }

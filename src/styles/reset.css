@@ -4,5 +4,6 @@
   padding: 0;
   border: 0;
   font-family: "Press Start 2P", cursive;
+  -webkit-user-select: none;
   user-select: none;
 }
