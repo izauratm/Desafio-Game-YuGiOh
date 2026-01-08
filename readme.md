@@ -1,4 +1,4 @@
-# 🧙‍♂️  Desafio Game Yu-Gi-Oh Yu-Gi-Oh | Jo-ken-po Edition
+# <h1 align="center">🧙‍♂️  Desafio Game Yu-Gi-Oh Yu-Gi-Oh | Jo-ken-po Edition</h1>
   ![cartas](https://github.com/user-attachments/assets/9ca33eeb-ce25-47d1-aed7-b1b63f3e0919)
  
 Um mini game inspirado no universo de **Yu-Gi-Oh!**, onde as cartas duelam em um sistema de Jo-Ken-Pô (Pedra, Papel e Tesoura). Criado como parte de um desafio da DIO.me para aplicar os conceitos de lógica de programação com **HTML, CSS e JavaScript**. Sua base foi orientada e guiada pelo Professor **Felipe Aguiar da DIO** durante as explicações do desafio. Uma prova de como a lógica de jogo, o poder da manipulação do DOM e a criação de interfaces dinâmicas podem se combinar para transformar o navegador em uma verdadeira plataforma de games.
